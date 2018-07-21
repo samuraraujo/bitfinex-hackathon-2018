@@ -2,7 +2,6 @@ import websocket
 import json
 import time
 import bisect
-import api_math as math
 from kafka import KafkaProducer
 
 
@@ -20,12 +19,14 @@ class bfxwss():
     
     def __init__(self):
         self.producer = KafkaProducer(bootstrap_servers='localhost:9092')
+        self.count = 0
     
     def on_message(self, ws, message):
-        #message = json.loads(message)
-        print(message)
-        if(message[1] != "hb"):
+        msg = json.loads(message)
+        self.count += 1
+        if(self.count > 2 and msg[1] != "hb"):
             self.producer.send('btcusd',message.encode('utf-8'))
+            print(message)
     
     def on_error(self, ws, error):
         print(error)
