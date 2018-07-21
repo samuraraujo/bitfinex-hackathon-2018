@@ -2,8 +2,6 @@ import websocket
 import json
 import time
 import bisect
-from kafka import KafkaProducer
-
 
 URL = "wss://api.bitfinex.com/ws/2"
 
@@ -14,8 +12,9 @@ TRADES_QUERY = {"event": "subscribe"
                ,"channel": "trades"
                ,"symbol": "tBTCUSD"}
 
+db = MongoClient()["bitfinex"]
 
-class bfxwss():
+class TradesToMongoWriter():
     
     def __init__(self):
         self.producer = KafkaProducer(bootstrap_servers='localhost:9092')
@@ -24,8 +23,9 @@ class bfxwss():
     def on_message(self, ws, message):
         msg = json.loads(message)
         self.count += 1
-        if(self.count > 2 and msg[1] != "hb"):
-            self.producer.send('btcusd',message.encode('utf-8'))
+        # write data to mongo
+        if(self.count > 3 and msg[1] != "hb"):
+            db.btcusd.insert_one({"trade": msg})
             print(message)
     
     def on_error(self, ws, error):
@@ -38,7 +38,7 @@ class bfxwss():
         ws.send(json.dumps(TRADES_QUERY))
 
 if __name__ == "__main__":
-    b = bfxwss()
+    b = TradesToMongoWriter()
     websocket.enableTrace(True)
     ws = websocket.WebSocketApp(URL,
                               on_message = b.on_message,
