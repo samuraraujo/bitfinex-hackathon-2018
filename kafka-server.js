@@ -38,8 +38,8 @@ consumer.addTopics([
 
 
 consumer.on('message', function (message) {
-    feed.append([message]);
-    console.log(message);
+    feed.append([message.value]);
+    console.log(message.value);
 });
 
 
