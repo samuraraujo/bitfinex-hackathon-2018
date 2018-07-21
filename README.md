@@ -7,15 +7,15 @@ The rest of the story you know, clients can consume the data  (order book, trade
 
 Usage:
 
-# adds some trades to mongodb - websocket to mongodb
+Adds some trades to mongodb - websocket to mongodb
 
     python3 bitfinex_trades_ws.py
 
-# listen to mongodb changes and publish on kafka
+Listen to mongodb changes and publish on kafka
 
     node mongodb-listener.js
 
-# reads data from kafka and publish on hypernode
+Reads data from kafka and publish on hypernode
 
     node kafka-server.js btcusd
 
