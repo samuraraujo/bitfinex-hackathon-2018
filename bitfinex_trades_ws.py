@@ -2,6 +2,7 @@ import websocket
 import json
 import time
 import bisect
+from pymongo import MongoClient
 
 URL = "wss://api.bitfinex.com/ws/2"
 
@@ -17,7 +18,6 @@ db = MongoClient()["bitfinex"]
 class TradesToMongoWriter():
     
     def __init__(self):
-        self.producer = KafkaProducer(bootstrap_servers='localhost:9092')
         self.count = 0
     
     def on_message(self, ws, message):
