@@ -5,6 +5,7 @@ Distribute ethfinex data via hypercore
     npm install hypercore
     npm install hyperdiscovery
     npm install kafka-node
+    npm install mongodb
 
 Usage:
 
