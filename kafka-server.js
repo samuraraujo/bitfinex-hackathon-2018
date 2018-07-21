@@ -1,3 +1,4 @@
+// Kafka Consumer
 // This script consumes two parameter:
 // pair - the pair to listen to. E.g. btcusd
 // endpoint - kafka endpoint. E.g: localhost:2181 (default)
@@ -35,7 +36,6 @@ var consumer = new Consumer(
 consumer.addTopics([
     { topic: pair, partition: 0, offset: 0}
 ]);
-
 
 consumer.on('message', function (message) {
     feed.append([message.value]);
