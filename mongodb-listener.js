@@ -17,7 +17,7 @@ MongoClient.connect(uri, { useNewUrlParser: true } ,function(err, client) {
     }];
 
     var options = { };
-    db.collection("trades").watch().on('change', data =>
+    db.collection("btcusd").watch().on('change', data =>
     {
             console.log(data);
             producer.send( [{ topic: 'btcusd', messages: data["fullDocument"]["trade"] }], function (err, data) {   });
