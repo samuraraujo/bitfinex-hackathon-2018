@@ -25,7 +25,7 @@ class TradesToMongoWriter():
         self.count += 1
         # write data to mongo
         if(self.count > 3 and msg[1] != "hb"):
-            db.btcusd.insert_one({"trade": msg})
+            db.btcusd.insert_one({"trade": message})
             print(message)
     
     def on_error(self, ws, error):

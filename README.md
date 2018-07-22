@@ -1,8 +1,10 @@
-# Distribute Bitfinex Data via HyperCore
+# Tradercast - Broadcasting Trader Data via HyperCore
 
-Distribute ethfinex data via hypercore. This demo listen to mongodb change log in real time, send the data to kafka. A consumer will then read data from kafka and put it on hypercore.
+This demo distribute ethfinex data via hypercore.
 
-The rest of the story you know, clients can consume the data  (order book, trades, candles) in a peer to peer fashion, with very little overhead to bitfinex infrastructure.
+the application listen to mongodb changes log in real time, send the data to kafka. A consumer will then read data from kafka and put it on hypercore.
+
+The rest of the story you know, clients can consume the data  (order book, trades, candles) in a peer to peer fashion, with very little overhead to bitfinex/ethfinex infrastructure.
 
 
 Usage:
@@ -32,6 +34,11 @@ Please install the dependecies below to run this demo.
     npm install kafka-node
     npm install mongodb
 
+## Python Packages
+
+    pip3 install websocket
+    pip3 install websocket-client
+    pip3 install pymongo
 
 ## MongoDB
 
@@ -41,6 +48,8 @@ Download MongoDB v4.0.0 and run it as a replica set.
 
 For testing connect to MongoDB and run
 
+    ./bin/mongo
+    use bitfinex
     rs.initiate()
 
 ## Kafka
