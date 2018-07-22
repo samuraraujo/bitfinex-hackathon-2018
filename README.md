@@ -21,6 +21,10 @@ Reads data from kafka and publish on hypernode
 
     node kafka-server.js btcusd
 
+To start a hypercode client that will copy the data via peer-to-peer
+
+    node client.js
+
 # bitfinex-hackathon-2018
 
 # Dependencies
@@ -33,6 +37,7 @@ Please install the dependecies below to run this demo.
     npm install hyperdiscovery
     npm install kafka-node
     npm install mongodb
+    npm install random-access-memory
 
 ## Python Packages
 

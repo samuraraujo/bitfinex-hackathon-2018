@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f89aadd-47df-4e44-8c24-870840ccaf22" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/btcusd/bitfield" beforeDir="false" afterPath="$PROJECT_DIR$/data/btcusd/bitfield" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/btcusd/data" beforeDir="false" afterPath="$PROJECT_DIR$/data/btcusd/data" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/btcusd/signatures" beforeDir="false" afterPath="$PROJECT_DIR$/data/btcusd/signatures" afterDir="false" />
@@ -41,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="client.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="client.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="93" selection-start-line="4" selection-start-column="93" selection-end-line="4" selection-end-column="93" />
+            <state relative-caret-position="38">
+              <caret line="2" column="41" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -59,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+            <state relative-caret-position="455">
+              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -90,8 +90,8 @@
         <option value="$PROJECT_DIR$/kafka-server.js" />
         <option value="$PROJECT_DIR$/mongodb-listener.js" />
         <option value="$PROJECT_DIR$/bitfinex_trades_ws.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/client.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -205,12 +205,12 @@
       <option name="presentableId" value="Default" />
       <updated>1532172123546</updated>
       <workItem from="1532172125502" duration="3736000" />
-      <workItem from="1532182027099" duration="12700000" />
+      <workItem from="1532182027099" duration="12850000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16436000" />
+    <option name="totallyTimeSpent" value="16586000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1981" height="1127" extended-state="6" />
@@ -391,17 +391,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/client.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="51" column="16" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+        <state relative-caret-position="38">
+          <caret line="2" column="41" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client.js">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="93" selection-start-line="4" selection-start-column="93" selection-end-line="4" selection-end-column="93" />
+        <state relative-caret-position="455">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
         </state>
       </provider>
     </entry>
